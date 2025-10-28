@@ -1,0 +1,732 @@
+PS C:\Datadog\Scripts> .\Test.ps1
+[2025-10-28 19:26:59] [INFO] Starting backup and configuration. Boomi processes will NOT be restarted.
+[2025-10-28 19:26:59] [INFO] Scanning Boomi root for instances containing 'UnitedRental-Production-Final'...
+[2025-10-28 19:26:59] [INFO] Found Boomi instance: C:\Program Files\Boomi AtomSphere\Atom - UnitedRental-Production-Final
+[2025-10-28 19:26:59] [INFO] Found Boomi instance: C:\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final
+[2025-10-28 19:26:59] [INFO] Found Boomi instance: C:\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final-Mol
+[2025-10-28 19:26:59] [INFO] Backed up "C:\Program Files\Boomi AtomSphere\Atom - UnitedRental-Production-Final\bin\atom.vmoptions" -> "C:\Backup_Boomi_Datadog_20251028_192659\C\Program Files\Boomi AtomSphere\Atom - UnitedRental-Production-Final\bin\atom.vmoptions.bak.20251028_192659"
+[2025-10-28 19:26:59] [INFO] Backed up "C:\Program Files\Boomi AtomSphere\Atom - UnitedRental-Production-Final\bin\molecule.vmoptions" -> "C:\Backup_Boomi_Datadog_20251028_192659\C\Program Files\Boomi AtomSphere\Atom - UnitedRental-Production-Final\bin\molecule.vmoptions.bak.20251028_192659"
+[2025-10-28 19:26:59] [INFO] Backed up "C:\Program Files\Boomi AtomSphere\Atom - UnitedRental-Production-Final\conf\container.properties" -> "C:\Backup_Boomi_Datadog_20251028_192659\C\Program Files\Boomi AtomSphere\Atom - UnitedRental-Production-Final\conf\container.properties.bak.20251028_192659"
+[2025-10-28 19:27:00] [INFO] Backed up "C:\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final\bin\atom.vmoptions" -> "C:\Backup_Boomi_Datadog_20251028_192659\C\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final\bin\atom.vmoptions.bak.20251028_192700"
+[2025-10-28 19:27:00] [INFO] Backed up "C:\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final\bin\molecule.vmoptions" -> "C:\Backup_Boomi_Datadog_20251028_192659\C\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final\bin\molecule.vmoptions.bak.20251028_192700"
+[2025-10-28 19:27:00] [INFO] Backed up "C:\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final\conf\container.properties" -> "C:\Backup_Boomi_Datadog_20251028_192659\C\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final\conf\container.properties.bak.20251028_192700"
+[2025-10-28 19:27:00] [INFO] Backed up "C:\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final-Mol\bin\atom.vmoptions" -> "C:\Backup_Boomi_Datadog_20251028_192659\C\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final-Mol\bin\atom.vmoptions.bak.20251028_192700"
+[2025-10-28 19:27:00] [INFO] Backed up "C:\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final-Mol\bin\molecule.vmoptions" -> "C:\Backup_Boomi_Datadog_20251028_192659\C\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final-Mol\bin\molecule.vmoptions.bak.20251028_192700"
+[2025-10-28 19:27:00] [INFO] Backed up "C:\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final-Mol\conf\container.properties" -> "C:\Backup_Boomi_Datadog_20251028_192659\C\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final-Mol\conf\container.properties.bak.20251028_192700"
+[2025-10-28 19:27:00] [INFO] Backed up "C:\ProgramData\Datadog\datadog.yaml" -> "C:\Backup_Boomi_Datadog_20251028_192659\C\ProgramData\Datadog\datadog.yaml.bak.20251028_192700"
+[2025-10-28 19:27:00] [INFO] Wrote Datadog YAML -> C:\ProgramData\Datadog\datadog.yaml
+[2025-10-28 19:27:00] [INFO] Backed up "C:\ProgramData\Datadog\conf.d\process.d\conf.yaml" -> "C:\Backup_Boomi_Datadog_20251028_192659\C\ProgramData\Datadog\conf.d\process.d\conf.yaml.bak.20251028_192700"
+[2025-10-28 19:27:00] [INFO] Wrote Datadog conf -> C:\ProgramData\Datadog\conf.d\process.d\conf.yaml
+[2025-10-28 19:27:00] [INFO] Backed up "C:\ProgramData\Datadog\conf.d\disk.d\conf.yaml" -> "C:\Backup_Boomi_Datadog_20251028_192659\C\ProgramData\Datadog\conf.d\disk.d\conf.yaml.bak.20251028_192700"
+[2025-10-28 19:27:00] [INFO] Wrote Datadog conf -> C:\ProgramData\Datadog\conf.d\disk.d\conf.yaml
+[2025-10-28 19:27:00] [INFO] Backed up "C:\ProgramData\Datadog\conf.d\ntp.d\conf.yaml" -> "C:\Backup_Boomi_Datadog_20251028_192659\C\ProgramData\Datadog\conf.d\ntp.d\conf.yaml.bak.20251028_192700"
+[2025-10-28 19:27:00] [INFO] Wrote Datadog conf -> C:\ProgramData\Datadog\conf.d\ntp.d\conf.yaml
+[2025-10-28 19:27:00] [INFO] Backed up "C:\ProgramData\Datadog\conf.d\windows_performance_counters.d\conf.yaml" -> "C:\Backup_Boomi_Datadog_20251028_192659\C\ProgramData\Datadog\conf.d\windows_performance_counters.d\conf.yaml.bak.20251028_192700"
+[2025-10-28 19:27:00] [INFO] Wrote Datadog conf -> C:\ProgramData\Datadog\conf.d\windows_performance_counters.d\conf.yaml
+[2025-10-28 19:27:00] [INFO] Backed up "C:\ProgramData\Datadog\conf.d\jmx.d\conf.yaml" -> "C:\Backup_Boomi_Datadog_20251028_192659\C\ProgramData\Datadog\conf.d\jmx.d\conf.yaml.bak.20251028_192700"
+[2025-10-28 19:27:00] [INFO] Wrote Datadog conf -> C:\ProgramData\Datadog\conf.d\jmx.d\conf.yaml
+[2025-10-28 19:27:00] [INFO] Restarting Datadog Agent service...
+[2025-10-28 19:27:08] [INFO] Datadog Agent restart completed.
+[2025-10-28 19:27:08] [INFO] Datadog Agent status:
+Getting the status from the agent.
+
+===============
+Agent (v7.71.2)
+===============
+  Status date: 2025-10-28 19:27:08.502 UTC (1761679628502)
+  Agent start: 2025-10-28 18:22:47.233 UTC (1761675767233)
+  Pid: 8176
+  Go Version: go1.24.6
+  Python Version: 3.12.11
+  Build arch: amd64
+  Agent flavor: agent
+  FIPS Mode: not available
+  Log Level: info
+
+  Paths
+  =====
+    Config File: C:\ProgramData\Datadog\datadog.yaml
+    conf.d: C:\ProgramData\Datadog\conf.d
+    checks.d: C:\ProgramData\Datadog\checks.d
+
+========
+Hostname
+========
+
+  ccrid: arn:aws:ec2:us-east-1:465432526748:instance/i-0f0400d251b72a4c8
+  ec2-hostname: ip-10-110-8-88.ec2.internal
+  host_aliases: [i-0f0400d251b72a4c8]
+  hostname: UnitedRental-Production-Final
+  hostname-resolution-version: 1
+  instance-id: i-0f0400d251b72a4c8
+  socket-fqdn: EC2AMAZ-I1EDOUG.ec2.internal.
+  socket-hostname: EC2AMAZ-I1EDOUG
+  host tags:
+
+  hostname provider: configuration
+
+
+Host Info
+=========
+  bootTime: 2025-10-28 10:19:59 UTC (1761646799000)
+  kernelArch: amd64
+  os: windows
+  platform: Windows Server 2025 Datacenter
+  platformFamily: Windows Server 2025 Datacenter
+  platformVersion: 10.0 Build 26100
+  procs: 127
+  uptime: 8h2m48s
+
+
+======
+Clocks
+======
+
+NTP offset: 609µs
+
+========
+Metadata
+========
+
+  agent_startup_time_ms: 1761675767233
+  agent_version: 7.71.2
+  auto_instrumentation_modes: []
+  config_apm_dd_url:
+  config_dd_url:
+  config_eks_fargate: false
+  config_id:
+  config_logs_dd_url:
+  config_logs_socks5_proxy_address:
+  config_no_proxy: [169.254.169.254 100.100.100.200]
+  config_process_dd_url:
+  config_proxy_http:
+  config_proxy_https:
+  config_site: datadoghq.com
+  diagnostics: map[connectivity:[{success Agent package yum  map[endpoint:https://yum.datadoghq.com]} {success Agent installation  map[endpoint:https://install.datadoghq.com]} {success Agent package apt  map[endpoint:https://apt.datadoghq.com]} {success Agent keys  map[endpoint:https://keys.datadoghq.com]} {success LLM obs  map[endpoint:https://llmobs-intake.datadoghq.com./api/v2/llmobs]} {success APM traces  map[endpoint:https://trace.agent.datadoghq.com./_health]} {success Remote configuration  map[endpoint:https://config.datadoghq.com./_health]} {success Connectivity to https://dbm-metrics-intake.datadoghq.com./api/v2/databasequery  map[]} {success Connectivity to https://dbm-metrics-intake.datadoghq.com./api/v2/dbmmetrics  map[]} {success Connectivity to https://dbm-metrics-intake.datadoghq.com./api/v2/dbmmetadata  map[]} {success Connectivity to https://dbm-metrics-intake.datadoghq.com./api/v2/dbmactivity  map[]} {success Connectivity to https://dbm-metrics-intake.datadoghq.com./api/v2/dbmhealth  map[]} {success Connectivity to https://ndm-intake.datadoghq.com./api/v2/ndm  map[]} {success Connectivity to https://snmp-traps-intake.datadoghq.com./api/v2/ndmtraps  map[]} {success Connectivity to https://ndmflow-intake.datadoghq.com./api/v2/ndmflow  map[]} {success Connectivity to https://netpath-intake.datadoghq.com./api/v2/netpath  map[]} {success Connectivity to https://contlcycle-intake.datadoghq.com./api/v2/contlcycle  map[]} {success Connectivity to https://contimage-intake.datadoghq.com./api/v2/contimage  map[]} {success Connectivity to https://sbom-intake.datadoghq.com./api/v2/sbom  map[]} {success HTTPS connectivity to https://agent-http-intake.logs.datadoghq.com./api/v2/logs  map[]} {success Connectivity to https://app.datadoghq.com./api/v1/series  map[]} {success Connectivity to https://app.datadoghq.com./api/v1/check_run  map[]} {success Connectivity to https://app.datadoghq.com./intake/  map[]} {success Connectivity to https://app.datadoghq.com./api/v1/validate  map[]} {success Connectivity to https://app.datadoghq.com./api/v1/metadata  map[]} {success Connectivity to https://app.datadoghq.com./api/v2/series  map[]} {success Connectivity to https://app.datadoghq.com./api/beta/sketches  map[]} {success Connectivity to https://7-71-2-flare.agent.datadoghq.com./support/flare  map[]}]]
+  feature_apm_enabled: true
+  feature_auto_instrumentation_enabled: false
+  feature_container_images_enabled: true
+  feature_csm_vm_containers_enabled: false
+  feature_csm_vm_hosts_enabled: false
+  feature_cspm_enabled: false
+  feature_cspm_host_benchmarks_enabled: false
+  feature_cws_enabled: false
+  feature_cws_network_enabled: true
+  feature_cws_remote_config_enabled: true
+  feature_cws_security_profiles_enabled: false
+  feature_discovery_enabled: false
+  feature_dynamic_instrumentation_enabled: false
+  feature_gpu_monitoring_enabled: false
+  feature_imdsv2_enabled: false
+  feature_logs_enabled: true
+  feature_networks_enabled: false
+  feature_networks_http_enabled: true
+  feature_networks_https_enabled: true
+  feature_oom_kill_enabled: false
+  feature_otlp_enabled: false
+  feature_process_enabled: true
+  feature_process_language_detection_enabled: false
+  feature_processes_container_enabled: false
+  feature_remote_configuration_enabled: true
+  feature_tcp_queue_length_enabled: false
+  feature_usm_enabled: false
+  feature_usm_go_tls_enabled: true
+  feature_usm_http2_enabled: false
+  feature_usm_istio_enabled: true
+  feature_usm_kafka_enabled: false
+  feature_usm_postgres_enabled: false
+  feature_usm_redis_enabled: false
+  feature_windows_crash_detection_enabled: false
+  fips_mode: false
+  flavor: agent
+  fleet_policies_applied: []
+  hostname_source: configuration
+  infrastructure_mode: full
+  install_method_installer_version: 7.71.2
+  install_method_tool: windows_msi_quiet
+  install_method_tool_version: windows_msi_next_gen_1.0.0.0
+  logs_transport: HTTP
+  system_probe_core_enabled: true
+  system_probe_gateway_lookup_enabled: true
+  system_probe_kernel_headers_download_enabled: false
+  system_probe_max_connections_per_message: 600
+  system_probe_prebuilt_fallback_enabled: false
+  system_probe_protocol_classification_enabled: true
+  system_probe_root_namespace_enabled: true
+  system_probe_runtime_compilation_enabled: false
+  system_probe_telemetry_enabled: false
+  system_probe_track_tcp_4_connections: true
+  system_probe_track_tcp_6_connections: true
+  system_probe_track_udp_4_connections: true
+  system_probe_track_udp_6_connections: true
+
+=================
+HA Agent Metadata
+=================
+
+
+=========
+Collector
+=========
+
+
+  Running Checks
+  ==============
+
+    agentcrashdetect
+    ----------------
+      Instance ID: agentcrashdetect [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\agentcrashdetect.d\conf.yaml.default[0]
+      Total Runs: 257
+      Metric Samples: Last Run: 0, Total: 0
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 0s
+      Last Execution Date : 2025-10-28 19:27:03.201 UTC (1761679623201)
+      Last Successful Execution Date : 2025-10-28 19:27:03 UTC (1761679623000)
+      metadata:
+        config.source: C:\ProgramData\Datadog\conf.d\agentcrashdetect.d\conf.yaml.default[0]
+
+
+    container_image
+    ---------------
+      Instance ID: container_image [OK]
+      Long Running Check: true
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\container_image.d\conf.yaml.default[0]
+      Total Metric Samples: 0
+      Total Events: 0
+      Total Service Checks: 0
+      metadata:
+        config.source: C:\ProgramData\Datadog\conf.d\container_image.d\conf.yaml.default[0]
+
+
+    container_lifecycle
+    -------------------
+      Instance ID: container_lifecycle [OK]
+      Long Running Check: true
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\container_lifecycle.d\conf.yaml.default[0]
+      Total Metric Samples: 0
+      Total Events: 0
+      Total Service Checks: 0
+      metadata:
+        config.source: C:\ProgramData\Datadog\conf.d\container_lifecycle.d\conf.yaml.default[0]
+
+
+    cpu
+    ---
+      Instance ID: cpu [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\cpu.d\conf.yaml.default[0]
+      Total Runs: 257
+      Metric Samples: Last Run: 8, Total: 2,056
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 0s
+      Last Execution Date : 2025-10-28 19:26:54.202 UTC (1761679614202)
+      Last Successful Execution Date : 2025-10-28 19:26:54 UTC (1761679614000)
+      metadata:
+        config.source: C:\ProgramData\Datadog\conf.d\cpu.d\conf.yaml.default[0]
+
+
+    disk (7.1.0)
+    ------------
+      Instance ID: disk:process_disk:63a3fea9bb33bdd8 [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\disk.d\conf.yaml[1]
+      Total Runs: 257
+      Metric Samples: Last Run: 9, Total: 2,313
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 2ms
+      Last Execution Date : 2025-10-28 19:26:57.203 UTC (1761679617203)
+      Last Successful Execution Date : 2025-10-28 19:26:57 UTC (1761679617000)
+      metadata:
+        config.source: C:\ProgramData\Datadog\conf.d\disk.d\conf.yaml[1]
+
+      Instance ID: disk:system_disk:b057fc7152a9e557 [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\disk.d\conf.yaml[0]
+      Total Runs: 258
+      Metric Samples: Last Run: 9, Total: 2,322
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 2ms
+      Last Execution Date : 2025-10-28 19:27:05.204 UTC (1761679625204)
+      Last Successful Execution Date : 2025-10-28 19:27:05 UTC (1761679625000)
+      metadata:
+        config.source: C:\ProgramData\Datadog\conf.d\disk.d\conf.yaml[0]
+
+
+    file_handle
+    -----------
+      Instance ID: file_handle [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\file_handle.d\conf.yaml.default[0]
+      Total Runs: 257
+      Metric Samples: Last Run: 1, Total: 257
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 1ms
+      Last Execution Date : 2025-10-28 19:27:01.205 UTC (1761679621205)
+      Last Successful Execution Date : 2025-10-28 19:27:01 UTC (1761679621000)
+      metadata:
+        config.source: C:\ProgramData\Datadog\conf.d\file_handle.d\conf.yaml.default[0]
+
+
+    io
+    --
+      Instance ID: io [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\io.d\conf.yaml.default[0]
+      Total Runs: 258
+      Metric Samples: Last Run: 7, Total: 1,806
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 1ms
+      Last Execution Date : 2025-10-28 19:27:08.202 UTC (1761679628202)
+      Last Successful Execution Date : 2025-10-28 19:27:08 UTC (1761679628000)
+      metadata:
+        config.source: C:\ProgramData\Datadog\conf.d\io.d\conf.yaml.default[0]
+
+
+    memory
+    ------
+      Instance ID: memory [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\memory.d\conf.yaml.default[0]
+      Total Runs: 257
+      Metric Samples: Last Run: 17, Total: 4,369
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 2ms
+      Last Execution Date : 2025-10-28 19:27:00.203 UTC (1761679620203)
+      Last Successful Execution Date : 2025-10-28 19:27:00 UTC (1761679620000)
+      metadata:
+        config.source: C:\ProgramData\Datadog\conf.d\memory.d\conf.yaml.default[0]
+
+
+    network (5.3.0)
+    ---------------
+      Instance ID: network:4b0649b7e11f0772 [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\network.d\conf.yaml.default[0]
+      Total Runs: 257
+      Metric Samples: Last Run: 49, Total: 12,593
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 7ms
+      Last Execution Date : 2025-10-28 19:27:07.211 UTC (1761679627211)
+      Last Successful Execution Date : 2025-10-28 19:27:07 UTC (1761679627000)
+      metadata:
+        config.source: C:\ProgramData\Datadog\conf.d\network.d\conf.yaml.default[0]
+
+
+    ntp
+    ---
+      Instance ID: ntp:3fa7e51d2aabcd08 [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\ntp.d\conf.yaml[0]
+      Total Runs: 5
+      Metric Samples: Last Run: 1, Total: 5
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 1, Total: 5
+      Average Execution Time : 1ms
+      Last Execution Date : 2025-10-28 19:22:50.224 UTC (1761679370224)
+      Last Successful Execution Date : 2025-10-28 19:22:50 UTC (1761679370000)
+      metadata:
+        config.source: C:\ProgramData\Datadog\conf.d\ntp.d\conf.yaml[0]
+
+
+    process (5.1.0)
+    ---------------
+      Instance ID: process:process_disk:cad7b34155689270 [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\process.d\conf.yaml[0]
+      Total Runs: 257
+      Metric Samples: Last Run: 19, Total: 4,881
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 1, Total: 257
+      Average Execution Time : 55ms
+      Last Execution Date : 2025-10-28 19:27:04.206 UTC (1761679624206)
+      Last Successful Execution Date : 2025-10-28 19:27:04 UTC (1761679624000)
+      metadata:
+        config.source: C:\ProgramData\Datadog\conf.d\process.d\conf.yaml[0]
+
+
+    telemetry
+    ---------
+      Instance ID: telemetry [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\telemetry.d\conf.yaml.default[0]
+      Total Runs: 257
+      Metric Samples: Last Run: 8, Total: 2,056
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 0s
+      Last Execution Date : 2025-10-28 19:26:59.201 UTC (1761679619201)
+      Last Successful Execution Date : 2025-10-28 19:26:59 UTC (1761679619000)
+      metadata:
+        config.source: C:\ProgramData\Datadog\conf.d\telemetry.d\conf.yaml.default[0]
+
+
+    uptime
+    ------
+      Instance ID: uptime [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\uptime.d\conf.yaml.default[0]
+      Total Runs: 257
+      Metric Samples: Last Run: 1, Total: 257
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 0s
+      Last Execution Date : 2025-10-28 19:27:06.203 UTC (1761679626203)
+      Last Successful Execution Date : 2025-10-28 19:27:06 UTC (1761679626000)
+      metadata:
+        config.source: C:\ProgramData\Datadog\conf.d\uptime.d\conf.yaml.default[0]
+
+
+    windows_performance_counters (3.1.0)
+    ------------------------------------
+      Instance ID: windows_performance_counters:performance:21ecb066eec2e76e [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\windows_performance_counters.d\conf.yaml[0]
+      Total Runs: 257
+      Metric Samples: Last Run: 15, Total: 3,843
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 1, Total: 257
+      Average Execution Time : 2ms
+      Last Execution Date : 2025-10-28 19:26:56.205 UTC (1761679616205)
+      Last Successful Execution Date : 2025-10-28 19:26:56 UTC (1761679616000)
+      metadata:
+        config.source: C:\ProgramData\Datadog\conf.d\windows_performance_counters.d\conf.yaml[0]
+
+      Instance ID: windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\windows_performance_counters.d\conf.BackupOct28.yaml[0]
+      Total Runs: 386
+      Metric Samples: Last Run: 8, Total: 3,083
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 1, Total: 386
+      Average Execution Time : 8ms
+      Last Execution Date : 2025-10-28 19:27:02.314 UTC (1761679622314)
+      Last Successful Execution Date : 2025-10-28 19:27:02 UTC (1761679622000)
+      metadata:
+        config.source: C:\ProgramData\Datadog\conf.d\windows_performance_counters.d\conf.BackupOct28.yaml[0]
+
+
+    winproc
+    -------
+      Instance ID: winproc [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\winproc.d\conf.yaml.default[0]
+      Total Runs: 257
+      Metric Samples: Last Run: 2, Total: 514
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 1ms
+      Last Execution Date : 2025-10-28 19:26:58.204 UTC (1761679618204)
+      Last Successful Execution Date : 2025-10-28 19:26:58 UTC (1761679618000)
+      metadata:
+        config.source: C:\ProgramData\Datadog\conf.d\winproc.d\conf.yaml.default[0]
+
+
+==========
+Aggregator
+==========
+
+  Checks Metric Sample: 50,314
+  Dogstatsd Metric Sample: 105,998
+  Event: 1
+  Events Flushed: 1
+  Number Of Flushes: 257
+  Series Flushed: 129,257
+  Service Check: 1,164
+  Service Checks Flushed: 1,420
+
+=========
+APM Agent
+=========
+
+  Status: Running
+  Pid: 1224
+  Uptime: 3860 seconds
+  Mem alloc: 9,850,656 bytes
+  Hostname: UnitedRental-Production-Final
+  Receiver: localhost:8126
+  Endpoints:
+    https://trace.agent.datadoghq.com.
+
+  Receiver (previous minute)
+  ==========================
+    No traces received in the previous minute.
+
+
+
+  Writer (previous minute)
+  ========================
+    Traces: 0 payloads, 0 traces, 0 events, 0 bytes
+    Stats: 0 payloads, 0 stats buckets, 0 bytes
+
+=========
+DogStatsD
+=========
+
+  Event Packets: 0
+  Event Parse Errors: 0
+  Metric Packets: 105,997
+  Metric Parse Errors: 0
+  Service Check Packets: 259
+  Service Check Parse Errors: 0
+  Udp Bytes: 13,530,144
+  Udp Packet Reading Errors: 0
+  Udp Packets: 23,767
+  Uds Bytes: 0
+  Uds Origin Detection Errors: 0
+  Uds Packet Reading Errors: 0
+  Uds Packets: 0
+  Unterminated Metric Errors: 0
+
+Tip: For troubleshooting, enable 'dogstatsd_metrics_stats_enable' in the main datadog.yaml file to generate Dogstatsd logs. Once 'dogstatsd_metrics_stats_enable' is enabled, users can also use 'dogstatsd-stats' command to get visibility of the latest collected metrics.
+
+=========
+Endpoints
+=========
+
+  https://app.datadoghq.com. - API Key ending with:
+      - 2d9b2
+
+================
+Fleet Automation
+================
+
+
+  Fleet Management is disabled
+
+  Remote Management Status:    Disabled
+  Datadog Installer Status:    Not running
+
+
+=========
+Forwarder
+=========
+
+  Transactions
+  ============
+    Cluster: 0
+    ClusterRole: 0
+    ClusterRoleBinding: 0
+    CronJob: 0
+    CustomResource: 0
+    CustomResourceDefinition: 0
+    DaemonSet: 0
+    Deployment: 0
+    Dropped: 0
+    ECSTask: 0
+    EndpointSlice: 0
+    HighPriorityQueueFull: 0
+    HorizontalPodAutoscaler: 0
+    Ingress: 0
+    Job: 0
+    LimitRange: 0
+    Namespace: 0
+    NetworkPolicy: 0
+    Node: 0
+    OrchestratorManifest: 0
+    PersistentVolume: 0
+    PersistentVolumeClaim: 0
+    Pod: 0
+    PodDisruptionBudget: 0
+    ReplicaSet: 0
+    Requeued: 0
+    Retried: 0
+    RetryQueueSize: 0
+    Role: 0
+    RoleBinding: 0
+    Service: 0
+    ServiceAccount: 0
+    StatefulSet: 0
+    StorageClass: 0
+    VerticalPodAutoscaler: 0
+
+  Transaction Successes
+  =====================
+    Total number: 574
+    Successes By Endpoint:
+      check_run_v1: 257
+      intake: 11
+      metadata_v1: 49
+      series_v2: 257
+
+  On-disk storage
+  ===============
+    On-disk storage is disabled. Configure `forwarder_storage_max_size_in_bytes` to enable it.
+
+  API Keys status
+  ===============
+    API key ending with 2d9b2: API Key valid
+
+=========
+JMX Fetch
+=========
+
+  Information
+  ==================
+    runtime_version : 11.0.23
+    version : 0.50.0
+  Initialized checks
+  ==================
+    jmx
+    - instance_name: boomi
+      metric_count: 273
+      service_check_count: 0
+      message: <no value>
+      status: OK
+  Failed checks
+  =============
+    no checks
+
+
+==========
+Logs Agent
+==========
+
+    Reliable: Sending compressed logs in HTTPS to agent-http-intake.logs.datadoghq.com. on port 443 (API Key: ***************************2d9b2)
+    BytesSent: 0
+    EncodedBytesSent: 184
+    LogsProcessed: 0
+    LogsSent: 0
+    LogsTruncated: 0
+    RetryCount: 0
+    RetryTimeSpent: 0s
+
+==========
+OTel Agent
+==========
+
+
+  Status: Not running or unreachable on https://localhost:7777.
+  Error: OTel Agent is not enabled.
+
+====
+OTLP
+====
+
+  Status: Not enabled
+  Collector status: Not running
+
+
+
+=============
+Process Agent
+=============
+
+  Version: 7.71.2
+  Status date: 2025-10-28 19:27:08.527 UTC (1761679628527)
+  Process Agent Start: 2025-10-28 18:22:48.201 UTC (1761675768201)
+  Pid: 7276
+  Go Version: go1.24.6
+  Build arch: amd64
+  Log Level: info
+  Enabled Checks: [process rtprocess]
+  Allocated Memory: 0 bytes
+  Hostname: UnitedRental-Production-Final
+  System Probe Process Module Status: Not running
+  Process Language Detection Enabled: False
+
+  =================
+  Process Endpoints
+  =================
+    https://process.datadoghq.com. - API Key ending with:
+        - 2d9b2
+
+  =========
+  Collector
+  =========
+    Last collection time: 2025-10-28 19:27:01
+    Docker socket:
+    Number of processes: 130
+    Number of containers: 0
+    Process Queue length: 0
+    RTProcess Queue length: 0
+    Connections Queue length: 0
+    Event Queue length: 0
+    Pod Queue length: 0
+    Process Bytes enqueued: 0
+    RTProcess Bytes enqueued: 0
+    Connections Bytes enqueued: 0
+    Event Bytes enqueued: 0
+    Pod Bytes enqueued: 0
+    Drop Check Payloads: []
+    Number of submission errors: 0
+
+  ==========
+  Extractors
+  ==========
+
+    Workloadmeta
+    ============
+      Cache size: 0
+      Stale diffs discarded: 0
+      Diffs dropped: 0
+
+====================
+Remote Configuration
+====================
+
+
+Organization enabled: False
+API Key: Not authorized, add the Remote Configuration Read permission to enable it for this agent.
+Last error: None
+
+
+
+=======
+Secrets
+=======
+No secret_backend_command set: secrets feature is not enabled
+
+===
+SSI
+===
+
+    SSI is not enabled.
+
+
+========================
+Transport Proxy Warnings
+========================
+
+  No Transport Proxy Warnings
+
+[2025-10-28 19:27:08] [INFO] Netstat check for port 9999 (local JMX):
+[2025-10-28 19:27:08] [INFO]   TCP    0.0.0.0:9999           0.0.0.0:0              LISTENING       7324
+[2025-10-28 19:27:08] [INFO]   TCP    127.0.0.1:9999         127.0.0.1:57628        ESTABLISHED     7324
+[2025-10-28 19:27:08] [INFO]   TCP    127.0.0.1:57628        127.0.0.1:9999         ESTABLISHED     2264
+[2025-10-28 19:27:08] [INFO]   TCP    [::]:9999              [::]:0                 LISTENING       7324
+[2025-10-28 19:27:08] [INFO] Operation completed successfully.
+[2025-10-28 19:27:08] [INFO] Backup root: C:\Backup_Boomi_Datadog_20251028_192659
+[2025-10-28 19:27:08] [INFO] No Boomi processes were restarted.
+PS C:\Datadog\Scripts> .\Test.ps1 > Deploy-DatadogBoomiConfig.txt
+[2025-10-28 19:28:36] [INFO] Starting backup and configuration. Boomi processes will NOT be restarted.
+[2025-10-28 19:28:36] [INFO] Scanning Boomi root for instances containing 'UnitedRental-Production-Final'...
+[2025-10-28 19:28:36] [INFO] Found Boomi instance: C:\Program Files\Boomi AtomSphere\Atom - UnitedRental-Production-Final
+[2025-10-28 19:28:36] [INFO] Found Boomi instance: C:\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final
+[2025-10-28 19:28:36] [INFO] Found Boomi instance: C:\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final-Mol
+[2025-10-28 19:28:36] [INFO] Backed up "C:\Program Files\Boomi AtomSphere\Atom - UnitedRental-Production-Final\bin\atom.vmoptions" -> "C:\Backup_Boomi_Datadog_20251028_192836\C\Program Files\Boomi AtomSphere\Atom - UnitedRental-Production-Final\bin\atom.vmoptions.bak.20251028_192836"
+[2025-10-28 19:28:36] [INFO] Backed up "C:\Program Files\Boomi AtomSphere\Atom - UnitedRental-Production-Final\bin\molecule.vmoptions" -> "C:\Backup_Boomi_Datadog_20251028_192836\C\Program Files\Boomi AtomSphere\Atom - UnitedRental-Production-Final\bin\molecule.vmoptions.bak.20251028_192836"
+[2025-10-28 19:28:36] [INFO] Backed up "C:\Program Files\Boomi AtomSphere\Atom - UnitedRental-Production-Final\conf\container.properties" -> "C:\Backup_Boomi_Datadog_20251028_192836\C\Program Files\Boomi AtomSphere\Atom - UnitedRental-Production-Final\conf\container.properties.bak.20251028_192836"
+[2025-10-28 19:28:36] [INFO] Backed up "C:\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final\bin\atom.vmoptions" -> "C:\Backup_Boomi_Datadog_20251028_192836\C\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final\bin\atom.vmoptions.bak.20251028_192836"
+[2025-10-28 19:28:36] [INFO] Backed up "C:\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final\bin\molecule.vmoptions" -> "C:\Backup_Boomi_Datadog_20251028_192836\C\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final\bin\molecule.vmoptions.bak.20251028_192836"
+[2025-10-28 19:28:36] [INFO] Backed up "C:\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final\conf\container.properties" -> "C:\Backup_Boomi_Datadog_20251028_192836\C\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final\conf\container.properties.bak.20251028_192836"
+[2025-10-28 19:28:36] [INFO] Backed up "C:\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final-Mol\bin\atom.vmoptions" -> "C:\Backup_Boomi_Datadog_20251028_192836\C\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final-Mol\bin\atom.vmoptions.bak.20251028_192836"
+[2025-10-28 19:28:36] [INFO] Backed up "C:\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final-Mol\bin\molecule.vmoptions" -> "C:\Backup_Boomi_Datadog_20251028_192836\C\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final-Mol\bin\molecule.vmoptions.bak.20251028_192836"
+[2025-10-28 19:28:36] [INFO] Backed up "C:\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final-Mol\conf\container.properties" -> "C:\Backup_Boomi_Datadog_20251028_192836\C\Program Files\Boomi AtomSphere\Molecule - UnitedRental-Production-Final-Mol\conf\container.properties.bak.20251028_192836"
+[2025-10-28 19:28:36] [INFO] Backed up "C:\ProgramData\Datadog\datadog.yaml" -> "C:\Backup_Boomi_Datadog_20251028_192836\C\ProgramData\Datadog\datadog.yaml.bak.20251028_192836"
+[2025-10-28 19:28:36] [INFO] Wrote Datadog YAML -> C:\ProgramData\Datadog\datadog.yaml
+[2025-10-28 19:28:36] [INFO] Backed up "C:\ProgramData\Datadog\conf.d\process.d\conf.yaml" -> "C:\Backup_Boomi_Datadog_20251028_192836\C\ProgramData\Datadog\conf.d\process.d\conf.yaml.bak.20251028_192836"
+[2025-10-28 19:28:36] [INFO] Wrote Datadog conf -> C:\ProgramData\Datadog\conf.d\process.d\conf.yaml
+[2025-10-28 19:28:36] [INFO] Backed up "C:\ProgramData\Datadog\conf.d\disk.d\conf.yaml" -> "C:\Backup_Boomi_Datadog_20251028_192836\C\ProgramData\Datadog\conf.d\disk.d\conf.yaml.bak.20251028_192836"
+[2025-10-28 19:28:36] [INFO] Wrote Datadog conf -> C:\ProgramData\Datadog\conf.d\disk.d\conf.yaml
+[2025-10-28 19:28:36] [INFO] Backed up "C:\ProgramData\Datadog\conf.d\ntp.d\conf.yaml" -> "C:\Backup_Boomi_Datadog_20251028_192836\C\ProgramData\Datadog\conf.d\ntp.d\conf.yaml.bak.20251028_192836"
+[2025-10-28 19:28:36] [INFO] Wrote Datadog conf -> C:\ProgramData\Datadog\conf.d\ntp.d\conf.yaml
+[2025-10-28 19:28:36] [INFO] Backed up "C:\ProgramData\Datadog\conf.d\windows_performance_counters.d\conf.yaml" -> "C:\Backup_Boomi_Datadog_20251028_192836\C\ProgramData\Datadog\conf.d\windows_performance_counters.d\conf.yaml.bak.20251028_192836"
+[2025-10-28 19:28:36] [INFO] Wrote Datadog conf -> C:\ProgramData\Datadog\conf.d\windows_performance_counters.d\conf.yaml
+[2025-10-28 19:28:36] [INFO] Backed up "C:\ProgramData\Datadog\conf.d\jmx.d\conf.yaml" -> "C:\Backup_Boomi_Datadog_20251028_192836\C\ProgramData\Datadog\conf.d\jmx.d\conf.yaml.bak.20251028_192836"
+[2025-10-28 19:28:36] [INFO] Wrote Datadog conf -> C:\ProgramData\Datadog\conf.d\jmx.d\conf.yaml
+[2025-10-28 19:28:36] [INFO] Restarting Datadog Agent service...
+[2025-10-28 19:28:44] [INFO] Datadog Agent restart completed.
+[2025-10-28 19:28:44] [INFO] Datadog Agent status:
+[2025-10-28 19:28:44] [INFO] Netstat check for port 9999 (local JMX):
+[2025-10-28 19:28:45] [INFO]   TCP    0.0.0.0:9999           0.0.0.0:0              LISTENING       7324
+[2025-10-28 19:28:45] [INFO]   TCP    127.0.0.1:9999         127.0.0.1:57628        ESTABLISHED     7324
+[2025-10-28 19:28:45] [INFO]   TCP    127.0.0.1:57628        127.0.0.1:9999         ESTABLISHED     2264
+[2025-10-28 19:28:45] [INFO]   TCP    [::]:9999              [::]:0                 LISTENING       7324
+[2025-10-28 19:28:45] [INFO] Operation completed successfully.
+[2025-10-28 19:28:45] [INFO] Backup root: C:\Backup_Boomi_Datadog_20251028_192836
+[2025-10-28 19:28:45] [INFO] No Boomi processes were restarted.
