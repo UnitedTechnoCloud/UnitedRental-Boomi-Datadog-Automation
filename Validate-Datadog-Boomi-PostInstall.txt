@@ -1,4 +1,4 @@
-PS C:\Datadog\Scripts> .\Test_Preflight.ps1
+PS C:\Datadog\Scripts> .\Preflight_Boomi_Datadog_Check.ps1
 
 ======================================================================
    BOOMI + DATADOG POST-INSTALL VALIDATION (PRODUCTION SAFE)
@@ -16,7 +16,7 @@ PS C:\Datadog\Scripts> .\Test_Preflight.ps1
 Agent 7.71.2 - Commit: a13e160920 - Serialization version: v5.0.164 - Go version: go1.24.6
 
 -- Validating JMX Metrics from Boomi ---------------------------
-[OK] JMX Fetch metrics detected - Boomi JVM connected
+[OK] JMX Fetch metrics detected ??? Boomi JVM connected
 
 -- Verifying Datadog Configuration Files -----------------------
 [OK] C:\ProgramData\Datadog\datadog.yaml exists
@@ -25,23 +25,82 @@ Agent 7.71.2 - Commit: a13e160920 - Serialization version: v5.0.164 - Go version
 
 -- Checking JMX Port (9999) ------------------------------------
 [OK] Port 9999 active (LISTENING)
-  TCP    0.0.0.0:9999           0.0.0.0:0              LISTENING       7324
-  TCP    127.0.0.1:9999         127.0.0.1:57628        ESTABLISHED     7324
-  TCP    127.0.0.1:57628        127.0.0.1:9999         ESTABLISHED     2264
-  TCP    [::]:9999              [::]:0                 LISTENING       7324
+  TCP    0.0.0.0:9999           0.0.0.0:0              LISTENING       3156
+  TCP    127.0.0.1:9999         127.0.0.1:49752        ESTABLISHED     3156
+  TCP    127.0.0.1:49752        127.0.0.1:9999         ESTABLISHED     4904
+  TCP    [::]:9999              [::]:0                 LISTENING       3156
 
 -- Reading Datadog Agent Logs (last 10 lines) ------------------
-2025-10-28 19:31:12 UTC | CORE | WARN | (pkg/collector/python/datadog_agent.go:145 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (counter.py:378) | Performance object `Process(w3wp*)` type is not detected
-2025-10-28 19:31:12 UTC | CORE | ERROR | (pkg/collector/python/datadog_agent.go:143 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (base.py:67) | Error refreshing counters for performance object `Process(w3wp*)`: None of the specified counters for performance object `Process(w3wp*)` are installed.If the object name is localized make sure `use_localized_counters` is true
-2025-10-28 19:31:12 UTC | CORE | WARN | (pkg/collector/python/datadog_agent.go:145 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (counter.py:378) | Performance object `W3SVC_W3WP` type is not detected
-2025-10-28 19:31:12 UTC | CORE | ERROR | (pkg/collector/python/datadog_agent.go:143 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (base.py:67) | Error refreshing counters for performance object `W3SVC_W3WP`: None of the specified counters for performance object `W3SVC_W3WP` are installed.If the object name is localized make sure `use_localized_counters` is true
-2025-10-28 19:31:12 UTC | CORE | WARN | (pkg/collector/python/datadog_agent.go:145 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (counter.py:378) | Performance object `Web Service` type is not detected
-2025-10-28 19:31:12 UTC | CORE | ERROR | (pkg/collector/python/datadog_agent.go:143 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (base.py:67) | Error refreshing counters for performance object `Web Service`: None of the specified counters for performance object `Web Service` are installed.If the object name is localized make sure `use_localized_counters` is true
-2025-10-28 19:31:12 UTC | CORE | ERROR | (pkg/collector/python/datadog_agent.go:143 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (counter.py:177) | Error collecting counter `MaxQueueItemAge` for object `HTTP Service Request Queues`: `(-2147481642, 'PdhGetFormattedCounterArray', 'Failed to retrieve counters values.')`
-2025-10-28 19:31:12 UTC | CORE | INFO | (pkg/aggregator/check_sampler.go:151 in commitSeries) | No value returned for check metric 'win_perf_ctr.logicaldisk.average_disk_per_second_read' on host 'UnitedRental-Production-Final' and tags 'instance:C:, server:ec2amaz-i1edoug': Rate value is negative, discarding it (the underlying counter may have been reset)
-2025-10-28 19:31:12 UTC | CORE | INFO | (pkg/aggregator/check_sampler.go:151 in commitSeries) | No value returned for check metric 'win_perf_ctr.physicaldisk.average_disk_per_second_read' on host 'UnitedRental-Production-Final' and tags 'instance:0 C:, server:ec2amaz-i1edoug': Rate value is negative, discarding it (the underlying counter may have been reset)
-2025-10-28 19:31:16 UTC | CORE | INFO | (comp/core/status/statusimpl/status_api_endpoints.go:29 in getStatus) | Got a request for the status. Making status.
+2025-10-29 16:20:53 UTC | CORE | ERROR | (pkg/collector/python/datadog_agent.go:143 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (base.py:67) | Error refreshing counters for performance object `Web Service`: None of the specified counters for performance object `Web Service` are installed.If the object name is localized make sure `use_localized_counters` is true
+2025-10-29 16:20:53 UTC | CORE | ERROR | (pkg/collector/python/datadog_agent.go:143 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (counter.py:177) | Error collecting counter `MaxQueueItemAge` for object `HTTP Service Request Queues`: `(-2147481642, 'PdhGetFormattedCounterArray', 'Failed to retrieve counters values.')`
+2025-10-29 16:21:03 UTC | CORE | WARN | (pkg/collector/python/datadog_agent.go:145 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (counter.py:378) | Performance object `Process(w3wp*)` type is not detected
+2025-10-29 16:21:03 UTC | CORE | ERROR | (pkg/collector/python/datadog_agent.go:143 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (base.py:67) | Error refreshing counters for performance object `Process(w3wp*)`: None of the specified counters for performance object `Process(w3wp*)` are installed.If the object name is localized make sure `use_localized_counters` is true
+2025-10-29 16:21:03 UTC | CORE | WARN | (pkg/collector/python/datadog_agent.go:145 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (counter.py:378) | Performance object `W3SVC_W3WP` type is not detected
+2025-10-29 16:21:03 UTC | CORE | ERROR | (pkg/collector/python/datadog_agent.go:143 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (base.py:67) | Error refreshing counters for performance object `W3SVC_W3WP`: None of the specified counters for performance object `W3SVC_W3WP` are installed.If the object name is localized make sure `use_localized_counters` is true
+2025-10-29 16:21:03 UTC | CORE | WARN | (pkg/collector/python/datadog_agent.go:145 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (counter.py:378) | Performance object `Web Service` type is not detected
+2025-10-29 16:21:03 UTC | CORE | ERROR | (pkg/collector/python/datadog_agent.go:143 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (base.py:67) | Error refreshing counters for performance object `Web Service`: None of the specified counters for performance object `Web Service` are installed.If the object name is localized make sure `use_localized_counters` is true
+2025-10-29 16:21:03 UTC | CORE | ERROR | (pkg/collector/python/datadog_agent.go:143 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (counter.py:177) | Error collecting counter `MaxQueueItemAge` for object `HTTP Service Request Queues`: `(-2147481642, 'PdhGetFormattedCounterArray', 'Failed to retrieve counters values.')`
+2025-10-29 16:21:08 UTC | CORE | INFO | (comp/core/status/statusimpl/status_api_endpoints.go:29 in getStatus) | Got a request for the status. Making status.
 
 ======================================================================
-   VALIDATION COMPLETE - REVIEW RESULTS ABOVE
+   VALIDATION COMPLETE ??? REVIEW RESULTS ABOVE
+======================================================================
+PS C:\Datadog\Scripts> notepad .\Preflight_Boomi_Datadog_Check.ps1
+PS C:\Datadog\Scripts> notepad .\Preflight_Boomi_Datadog_Check.ps1
+PS C:\Datadog\Scripts> .\Preflight_Boomi_Datadog_Check.ps1
+
+======================================================================
+   BOOMI + DATADOG POST-INSTALL VALIDATION (PRODUCTION SAFE)
+======================================================================
+
+
+-- Checking Boomi (Atom / Molecule) Services -------------------
+[OK] Found Boomi services:
+   - Atom - UnitedRental-Production-Final (Status: Running)
+
+-- Checking Boomi Runtime Processes (atom.exe / molecule.exe) --
+[OK] Running Boomi processes found:
+
+  Id ProcessName Path
+  -- ----------- ----
+2944 atom        C:\Program Files\Boomi AtomSphere\Atom - UnitedRental-Production-Final\bin\atom.exe
+3156 atom        C:\Program Files\Boomi AtomSphere\Atom - UnitedRental-Production-Final\bin\atom.exe
+
+
+
+-- Checking Datadog Agent Service ------------------------------
+[OK] Datadog Agent running
+
+-- Checking Datadog Agent Version ------------------------------
+Agent 7.71.2 - Commit: a13e160920 - Serialization version: v5.0.164 - Go version: go1.24.6
+
+-- Validating JMX Metrics from Boomi ---------------------------
+[OK] JMX Fetch metrics detected ??? Boomi JVM connected
+
+-- Verifying Datadog Configuration Files -----------------------
+[OK] C:\ProgramData\Datadog\datadog.yaml exists
+[OK] C:\ProgramData\Datadog\conf.d\jmx.d\conf.yaml exists
+[OK] C:\ProgramData\Datadog\conf.d\windows_performance_counters.d\conf.yaml exists
+
+-- Checking JMX Port (9999) ------------------------------------
+[OK] Port 9999 active (LISTENING)
+  TCP    0.0.0.0:9999           0.0.0.0:0              LISTENING       3156
+  TCP    127.0.0.1:9999         127.0.0.1:49752        ESTABLISHED     3156
+  TCP    127.0.0.1:49752        127.0.0.1:9999         ESTABLISHED     4904
+  TCP    [::]:9999              [::]:0                 LISTENING       3156
+
+-- Reading Datadog Agent Logs (last 10 lines) ------------------
+2025-10-29 16:26:53 UTC | CORE | INFO | (pkg/aggregator/check_sampler.go:151 in commitSeries) | No value returned for check metric 'win_perf_ctr.logicaldisk.average_disk_per_second_write' on host 'UnitedRental-Production-Final' and tags 'instance:C:, server:ec2amaz-i1edoug': Rate value is negative, discarding it (the underlying counter may have been reset)
+2025-10-29 16:26:53 UTC | CORE | INFO | (pkg/aggregator/check_sampler.go:151 in commitSeries) | No value returned for check metric 'win_perf_ctr.physicaldisk.average_disk_per_second_write' on host 'UnitedRental-Production-Final' and tags 'instance:0 C:, server:ec2amaz-i1edoug': Rate value is negative, discarding it (the underlying counter may have been reset)
+2025-10-29 16:27:03 UTC | CORE | WARN | (pkg/collector/python/datadog_agent.go:145 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (counter.py:378) | Performance object `Process(w3wp*)` type is not detected
+2025-10-29 16:27:03 UTC | CORE | ERROR | (pkg/collector/python/datadog_agent.go:143 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (base.py:67) | Error refreshing counters for performance object `Process(w3wp*)`: None of the specified counters for performance object `Process(w3wp*)` are installed.If the object name is localized make sure `use_localized_counters` is true
+2025-10-29 16:27:03 UTC | CORE | WARN | (pkg/collector/python/datadog_agent.go:145 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (counter.py:378) | Performance object `W3SVC_W3WP` type is not detected
+2025-10-29 16:27:03 UTC | CORE | ERROR | (pkg/collector/python/datadog_agent.go:143 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (base.py:67) | Error refreshing counters for performance object `W3SVC_W3WP`: None of the specified counters for performance object `W3SVC_W3WP` are installed.If the object name is localized make sure `use_localized_counters` is true
+2025-10-29 16:27:03 UTC | CORE | WARN | (pkg/collector/python/datadog_agent.go:145 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (counter.py:378) | Performance object `Web Service` type is not detected
+2025-10-29 16:27:03 UTC | CORE | ERROR | (pkg/collector/python/datadog_agent.go:143 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (base.py:67) | Error refreshing counters for performance object `Web Service`: None of the specified counters for performance object `Web Service` are installed.If the object name is localized make sure `use_localized_counters` is true
+2025-10-29 16:27:03 UTC | CORE | ERROR | (pkg/collector/python/datadog_agent.go:143 in LogMessage) | windows_performance_counters:win_perf_ctr:23315e0c777cf3f1 | (counter.py:177) | Error collecting counter `MaxQueueItemAge` for object `HTTP Service Request Queues`: `(-2147481642, 'PdhGetFormattedCounterArray', 'Failed to retrieve counters values.')`
+2025-10-29 16:27:07 UTC | CORE | INFO | (comp/core/status/statusimpl/status_api_endpoints.go:29 in getStatus) | Got a request for the status. Making status.
+
+======================================================================
+   VALIDATION COMPLETE ??? REVIEW RESULTS ABOVE
 ======================================================================
